@@ -4,7 +4,7 @@
 import pyperclip,re
 
 phoneRegex=re.compile(r'''(
-	(\d{3}|\(\d{3}\))?				#area code
+	(\d{3}|\(\d{3}\))?				        #area code
 	(\s|-|\.)?						#separator
 	(\d{3})							#first 3 digits
 	(\s|-|\.)						#separator
@@ -16,7 +16,7 @@ phoneRegex=re.compile(r'''(
 #CREATE EMAIL REGEX.
 emailRegex=re.compile(r'''(
 	[a-zA-Z0-9._%+-]+				#username
-	@								#@ symbo
+	@						#@ symbo
 	[a-zA-Z0-9.-]+					#domain name
 	(\.[a-zA-Z]{2,4})				#dot-something
 	)''',re.VERBOSE)
